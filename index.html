@@ -1,171 +1,219 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Philip John</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <style type="text/css">
+<head>
+	<meta charset="utf-8">
+	<title>Philip John</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: 'Courier New', Courier, monospace;
-            }
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Courier New', Courier, monospace;
+		}
 
-            h1 {
-                font-family: 'Trocchi', serif;
-                font-size: 3em;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
+		h1 {
+			font-family: 'Trocchi', serif;
+			font-size: 3em;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
 
-            h2 {
-                font-family: 'Trocchi', serif;
-                font-size: 1.5em;
-            }
+		h2 {
+			font-family: 'Trocchi', serif;
+			font-size: 1.5em;
+			font-weight: 100;
+		}
 
-            h3 {
-                font-size: 1.5em;
-            }
+		h3 {
+			font-size: 1.5em;
+		}
 
-            p {
-                line-height: 1.7em;
-            }
+		p,
+		li {
+			line-height: 1.7em;
+		}
 
-            #wrapper {
-                margin: 0 auto;
-                padding: 0;
-            }
+		#wrapper {
+			margin: 0 auto;
+			padding: 0;
+		}
 
-            #header {
-                padding: 0.5em 1em;
-            }
+		#header,
+		#footer {
+			padding: 0.5em 1em;
+		}
 
-            #intro {
-                margin: 0 auto;
-                padding: 0.5em 1em;
-                max-width: 1024px;
-            }
+		#intro {
+			margin: 0 auto;
+			padding: 0.5em 1em;
+			max-width: 1024px;
+		}
 
-            #intro-photo {
-                display: grid;
-            }
+		#intro-photo {
+			display: grid;
+		}
 
-            #photo {
-                width: 100%;
-                justify-self: center;
-                max-width: 300px;
-                max-height: 300px;
-            }
+		#photo {
+			width: 100%;
+			justify-self: center;
+			max-width: 300px;
+			max-height: 300px;
+		}
 
-            #content {
-                margin: 0 auto;
-                padding: 0.5em 1em;
-                display: grid;
-                grid-template-rows: 1fr;
-                max-width: 1024px;
-            }
+		#content {
+			margin: 0 auto;
+			padding: 0.5em 1em;
+			display: grid;
+			grid-template-rows: 1fr;
+			max-width: 1024px;
+		}
 
-            .experience-img {
-                max-width: 150px;
-                padding: 3%;
-            }
+		.card-img {
+			max-width: 150px;
+			padding: 3%;
+		}
 
-            .img-left {
-                float: left;
-            }
+		.img-left {
+			float: left;
+		}
 
-            .img-right {
-                float: right;
-            }
+		.img-right {
+			float: right;
+		}
 
-            @media ( min-width: 570px ) {
+		@media (min-width: 570px) {
 
-                #intro {
-                    display: grid;
-                    grid-gap: 1em;
-                    grid-template-columns: 1fr 1fr;
-                }
+			#intro {
+				display: grid;
+				grid-gap: 1em;
+				grid-template-columns: 1fr 1fr;
+			}
 
-            }
+		}
 
-            @media ( min-width: 768px ) {
+		@media (min-width: 768px) {
 
-                #experience-list {
-                    display: grid;
-                    grid-gap: 1em;
-                    grid-template-columns: 1fr 1fr;
-                }
+			.card-container {
+				display: grid;
+				grid-gap: 1em;
+				grid-template-columns: 1fr 1fr;
+			}
 
-            }
+		}
+	</style>
+</head>
 
-        </style>
-    </head>
-    <body>
-        <div id="wrapper">
+<body>
+	<div id="wrapper">
 
-            <div id="header">
+		<div id="header">
 
-                <h1>Philip John</h1>
-    
-                <h2>Senior WordPress Engineer specialising in <em>journalism</em> and <em>migrations</em>.</h2>
+			<h1>Philip John</h1>
 
-            </div>
+			<h2>Senior WordPress Engineer specialising in <em>journalism</em> and <em>migrations</em>.</h2>
 
-            <div id="intro">
-                <div id="intro-photo">
-                    <img id="photo" src="img/me.png" alt="A grayscale picture of Philip John" />
-                </div>
-                <div>
-                    <p>Hello.</p>
-                    <p>I am an experienced WordPress engineer, with a passion for open source and journalism. 15 years. small to enterprise. communication. launches & migrations.</p>
-                    <p>I am currently open to new projects. <a href="mailto:phil@philipjohn.me.uk">Let's talk</a>.</p>
-                </div>
-            </div>
+		</div>
 
-            <div id="content">
-                
-                <h2>My Experience</h2>
-    
-                <div id="experience-list">
+		<div id="intro">
+			<div id="intro-photo">
+				<img id="photo" src="img/me.png" alt="A grayscale picture of Philip John" />
+			</div>
+			<div>
+				<p>Hello.</p>
+				<p>I am an experienced WordPress engineer, with a passion for open source and journalism. 15 years.
+					small to enterprise. communication. launches & migrations.</p>
+				<p>I am currently open to new projects. <a href="mailto:phil@philipjohn.me.uk">Let's talk</a>.</p>
+			</div>
+		</div>
 
-                    <div class="experience">
-                        <h3>WordPress</h3>
-                        <img class="experience-img img-right" src="img/WordPress-logotype-simplified.png" alt="The WordPress logo: A grey circle around a grey stylised W" />
-                        <p>My WordPress journey began way back in the early days of the platform, around 2007, when I began experimenting with WordPress as a solution for the internet marketing agency I co-founded in 2004. WordPress quickly became a frequently used tool both internally and for clients.</p>
-                        <img class="experience-img img-left" src="img/cftp.png" alt="Code For The People logo">
-                        <p>I subsequently started a freelance business where I specialised in WordPress development projects for clients of various sizes, including some with a high-profile. Eventually that work earned me a job offer as the 6th member of well-respected agency <a href="https://codeforthepeople.com/">Code For The People</a>, a step that had me working on sites for the <em>Rolling Stones</em>, <em>Stephen Fry</em> and <em>Riverdance</em> among others.</p>
-                    </div>
-    
-                    <div class="experience">
-                        <h3>WordPress.com VIP</h3>
-                        <img class="experience-img img-right" src="img/vip.svg" alt="WordPress.com VIP logo">
-                        <p>The acquisition of Code For The People by Automattic and our absorbtion into the VIP team saw a new phase in my career. At VIP I helped support some of the world's biggest brands including news publishers like News Corp, News UK, Time Inc, CBS and PMC. My expertise as both a WordPress engineer and an excellent communicator saw me move to an engineering lead position where I became a named contact for some of VIP's most important clients.</p>
-                        <p>In this position I handled outages, forward planning and high-profile migrations working with and connecting both internal and external teams alongside my account management colleagues. VIP was often a high-stress, high-pressure environment but one in which I grew and excelled.</p>
-                    </div>
-    
-                    <div class="experience">
-                        <h3>Newspack</h3>
-                        <img class="experience-img img-right" src="img/newspack-logo.png" alt="Newspack logo">
-                        <p>In 2019, as a founding member of a new team, I helped build a brand new product aimed at small- to medium-sized news publishers. My experience with news publishing clients and as a senior engineer was incredibly valuable to the project. My skills then saw me create and take on the Technical Account Manager role where I worked directly with clients to onbaord them and migrate their sites to Newspack. I further helped hire two more people into the newly created role as Newspack expanded rapidly.</p>
-                    </div>
-    
-                    <div class="experience">
-                        <h3>Lichfield Live</h3>
-                        <img class="experience-img img-right" src="img/LichfieldLiveLogo.png" alt="Lichfield Live logo">
-                        <p>My passion for journalism started in my home city of Lichfield when in 2009 I volunteered to help with the technical side of a new, so-called at the time, "hyperlocal". Still going strong it is now a not-for-profit business with a local board of directors, around 90,000 visitors every month and the sole news publsher for the area.</p>
-                        <p>It is not just my technical skills that I have volunteered to Lichfield Live but my enthusiasm for social entrepreneurship and business acumen, leading it to it's current status and helping grow it's audience as well as substantially increasing revenue.</p>
-                    </div>
-    
-                </div>
+		<div id="content">
 
-            </div>
+			<h2>My Experience</h2>
 
-        </div>
+			<div class="card-container">
 
-    </body>
+				<div class="card">
+					<h3>WordPress</h3>
+					<img class="card-img img-right" src="img/WordPress-logotype-simplified.png"
+						alt="The WordPress logo: A grey circle around a grey stylised W" />
+					<p>My WordPress journey began way back in the early days of the platform, around 2007, when I began
+						experimenting with WordPress as a solution for the internet marketing agency I co-founded in
+						2004. WordPress quickly became a frequently used tool both internally and for clients.</p>
+					<img class="card-img img-left" src="img/cftp.png" alt="Code For The People logo">
+					<p>I subsequently started a freelance business where I specialised in WordPress development projects
+						for clients of various sizes, including some with a high-profile. Eventually that work earned me
+						a job offer as the 6th member of well-respected agency <a
+							href="https://codeforthepeople.com/">Code For The People</a>, a step that had me working on
+						sites for the <em>Rolling Stones</em>, <em>Stephen Fry</em> and <em>Riverdance</em> among
+						others.</p>
+				</div>
+
+				<div class="card">
+					<h3>WordPress.com VIP</h3>
+					<img class="card-img img-right" src="img/vip.svg" alt="WordPress.com VIP logo">
+					<p>The acquisition of Code For The People by Automattic and our absorbtion into the VIP team saw a
+						new phase in my career. At VIP I helped support some of the world's biggest brands including
+						news publishers like News Corp, News UK, Time Inc, CBS and PMC. My expertise as both a WordPress
+						engineer and an excellent communicator saw me move to an engineering lead position where I
+						became a named contact for some of VIP's most important clients.</p>
+					<p>In this position I handled outages, forward planning and high-profile migrations working with and
+						connecting both internal and external teams alongside my account management colleagues. VIP was
+						often a high-stress, high-pressure environment but one in which I grew and excelled.</p>
+				</div>
+
+				<div class="card">
+					<h3>Newspack</h3>
+					<img class="card-img img-right" src="img/newspack-logo.png" alt="Newspack logo">
+					<p>In 2019, as a founding member of a new team, I helped build a brand new product aimed at small-
+						to medium-sized news publishers. My experience with news publishing clients and as a senior
+						engineer was incredibly valuable to the project. My skills then saw me create and take on the
+						Technical Account Manager role where I worked directly with clients to onbaord them and migrate
+						their sites to Newspack. I further helped hire two more people into the newly created role as
+						Newspack expanded rapidly.</p>
+				</div>
+
+				<div class="card">
+					<h3>Lichfield Live</h3>
+					<img class="card-img img-right" src="img/LichfieldLiveLogo.png" alt="Lichfield Live logo">
+					<p>My passion for journalism started in my home city of Lichfield when in 2009 I volunteered to help
+						with the technical side of a new, so-called at the time, "hyperlocal". Still going strong it is
+						now a not-for-profit business with a local board of directors, around 90,000 visitors every
+						month and the sole news publsher for the area.</p>
+					<p>It is not just my technical skills that I have volunteered to Lichfield Live but my enthusiasm
+						for social entrepreneurship and business acumen, leading it to it's current status and helping
+						grow it's audience as well as substantially increasing revenue.</p>
+				</div>
+
+			</div>
+
+			<h2>Values</h2>
+
+			<div class="card">
+				<p>I have a strong sense of social justice and that filters into every aspect of my life, including
+					work. When I take on work I'm not just looking at the revenue and how interesting the project might
+					be, I'm also looking to make sure it doesn't conflict with my values.</p>
+				<p>To that end, please be aware that I will not entertain project for clients involved in or supporting:</p>
+				<ul>
+					<li>Fossil fuels</li>
+					<li>Suppression of human rights</li>
+					<li>Cryptocurrency and/or NFTs</li>
+				</ul>
+				<p>This list is subject to change at any time and the choice of whether to reject an opportunity based on values is entirely mine.</p>
+			</div>
+
+		</div>
+
+		<div id="footer">
+			<p>&copy; 2022 Philip John</p>
+		</div>
+
+	</div>
+
+</body>
+
 </html>
